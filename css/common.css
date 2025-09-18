@@ -7,6 +7,8 @@
   /* color */
   --color-primary: #6ec5c7;
   --color-white: #fff;
+  --color-black-01: #000000;
+  --color-black-02: #363636;
   --color-gray-01: #9ea1a7;
   --color-gray-03: #c3c4c3;
   --color-background: #f5f5f5;
@@ -103,6 +105,67 @@ body {
   object-fit: cover;
 }
 
+.header .inner .nav .gnb {
+  max-width: 393px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: red;
+  padding: 25px;
+  color: yellow;
+  z-index: 9999;
+}
+
+.header .inner .nav .gnb.active {
+  right: 0;
+}
+
+.header .inner .nav .gnb .gnb_wrap {
+  display: flex;
+  flex-direction: column;
+
+  align-items: end;
+  row-gap: 30px;
+}
+
+.header .inner .nav .gnb .gnb_wrap button {
+  width: 60px;
+  height: 60px;
+}
+
+.header .inner .nav .gnb .gnb_wrap button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header .inner .nav .gnb .gnb_wrap .list {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 20px;
+}
+
+.header .inner .nav .gnb .gnb_wrap .list li {
+  font-family: var(--body-02-font);
+  font-size: var(--body-02-size);
+  font-weight: var(--body-02-weight);
+  line-height: var(--body-02-lineheight);
+}
+
+.header .inner .nav .gnb .gnb_wrap .list li .depth-01 {
+  display: block;
+  font-family: var(--body-02-font);
+  font-size: var(--body-02-size);
+  font-weight: var(--body-02-weight);
+  line-height: var(--body-02-lineheight);
+}
+
+.header .inner .nav .gnb .gnb_wrap .list li a p {
+}
+
 /* footer */
 
 .footer {
@@ -112,7 +175,7 @@ body {
 .footer .inner {
   width: calc(100% - 25px);
   margin: 0 auto;
-  padding: 30px 0;
+
   display: flex;
   flex-direction: column;
   gap: 30px;

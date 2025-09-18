@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+@import url("reset.css");
+@import url("common.css");
+@import url("font.css");
+
+/* section-01 */
+
+.section-01 {
+  padding: 20px 0;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+
+.inner {
+  width: calc(100% - 25px);
+  padding: 30px 0;
+}
+
+.inner .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.inner .title h2 {
+  font-size: var(--heading-01-size);
+  font-family: var(--heading-01-font);
+  line-height: var(--hieading-01-lingheight);
+  color: var(--color-black-02);
+  text-align: center;
+}
+
+.inner .title p {
+  font-family: var(--caption-01-font);
+  font-size: var(--caption-01-size);
+  font-weight: var(--caption-01-weight);
+  line-height: var(--caption-01-lineheight);
+  color: var(--color-gray-01);
+  text-align: center;
+}
+
+.section-01 .inner .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.section-01 .inner .title h2 {
+  font-size: var(--heading-01-size);
+  font-family: var(--heading-01-font);
+  line-height: var(--hieading-01-lingheight);
+  text-align: center;
+}
+
+.section-01 .inner .title p {
+  font-family: var(--caption-01-font);
+  font-size: var(--caption-01-size);
+  font-weight: var(--caption-01-weight);
+  line-height: var(--caption-01-lineheight);
+  color: var(--color-gray-01);
+  text-align: center;
+}
+
+.section-01 .inner .list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section-01 .inner .list .item {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.section-01 .inner .list .item .product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.section-01 .inner .list .item .product .imagebox a {
+  width: 100%;
+  display: block;
+}
+.section-01 .inner .list .item .product .imagebox a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-01 .inner .list .item .product .text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.section-01 .inner .list .item .product .text a {
+  display: block;
+}
+
+.section-01 .inner .list .item .product .text a p {
+  font-family: var(--body-02-font);
+  font-size: var(--body-02-size);
+  font-weight: var(--body-02-weight);
+  line-height: var(--body-02-lineheight);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.section-01 .inner .list .item .product .text a strong {
+  font-family: var(--body-01-font);
+  font-size: var(--body-01-size);
+  font-weight: var(--body-01-weight);
+  line-height: var(--body-01-lineheight);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.section-01 .inner .list .item .util {
+  display: flex;
+  justify-content: center;
+  column-gap: 13px;
+}
+
+.section-01 .inner .list .item .util a {
+  display: block;
+  width: 20px;
+}
+
+.section-01 .inner .list .item .util a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .section-01 .inner .morePageBtn {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.section-01 .inner .morePageBtn a {
+  width: 100%;
+  display: block;
+}
+
+.section-01 .inner .morePageBtn a button {
+  width: 100%;
+  height: 48px;
+  border: solid 1px var(--color-gray-03);
+  border-radius: 10px;
+} */

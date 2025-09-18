@@ -58,6 +58,22 @@ body {
   object-fit: cover;
 }
 
+.header .inner .prevpage {
+  height: 32px;
+}
+
+.header .inner .prevpage a {
+  height: 100%;
+  display: block;
+}
+
+.header .inner .prevpage a img {
+  width: 100%;
+  height: 100%;
+  line-height: 32px;
+  object-fit: cover;
+}
+
 .header .inner .nav {
   display: flex;
   justify-content: space-between;

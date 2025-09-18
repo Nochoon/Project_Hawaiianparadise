@@ -1,40 +1,64 @@
 @charset "utf-8";
 
-@import url("../font/Jalnan2/stylesheet.css");
-@import url("../font/KoPubWorld_Dotum/stylesheet.css");
-@import url("../font/RiDiBatang/stylesheet.css");
+@import url("../font/Pretendard/pretendard.css");
+@import url("../font/DexotickByDhanStudio/stylesheet.css");
 
 :root {
-  --heading-01-size: 24px;
-  --heading-01-font: "Jalnan2";
+  --heading-01-font: "Dexotick_By_Dhan_Studio";
+  --heading-01-size: 32px;
+  --heading-01-lineheight: 48px;
 
-  --subtitle-01-size: 24px;
-  --subtitle-01-lineHeight: 140%;
-  --subtitle-01-weight: bold;
-  --subtitle-01-font: "KoPubWorld_Dotum";
+  --heading-02-font: "Dexotick_By_Dhan_Studio";
+  --heading-02-size: 24px;
+  --heading-02-lineheight: 36px;
 
-  --subtitle-02-size: 16px;
-  --subtitle-02-lineHeight: 140%;
-  --subtitle-02-weight: bold;
-  --subtitle-02-font: "KoPubWorld_Dotum";
+  --heading-03-font: "Pretendard";
+  --heading-03-size: 32px;
+  --heading-03-weight: 700;
+  --heading-03-lineheight: 48px;
 
-  --subtitle-03-size: 16px;
-  --subtitle-03-lineHeight: 140%;
-  --subtitle-03-weight: 500;
-  --subtitle-03-font: "KoPubWorld_Dotum";
+  --heading-04-font: "Pretendard";
+  --heading-04-size: 24px;
+  --heading-03-weight: 700;
+  --heading-04-lineheight: 36px;
 
+  --body-01-font: "Pretendard";
   --body-01-size: 16px;
-  --body-01-lineHeight: 140%;
-  --body-01-weight: 500;
-  --body-01-font: "RIDIBatang";
+  --body-01-weight: 700;
+  --body-01-lineheight: 24px;
 
-  --caption-01-size: 16px;
-  --caption-01-lineHeight: 140%;
-  --caption-01-weight: bold;
-  --caption-01-font: "KoPubWorld_Dotum";
+  --body-02-font: "Pretendard";
+  --body-02-size: 16px;
+  --body-02-weight: 400;
+  --body-02-lineheight: 24px;
 
-  --caption-02-size: 16px;
-  --caption-02-lineHeight: 140%;
-  --caption-02-weight: 300;
-  --caption-02-font: "KoPubWorld_Dotum";
+  --caption-01-font: "Pretendard";
+  --caption-01-size: 14px;
+  --caption-01-weight: 700;
+  --caption-01-lineheight: 21px;
+
+  --caption-02-font: "Pretendard";
+  --caption-02-size: 14px;
+  --caption-02-weight: 400;
+  --caption-02-lineheight: 21px;
+
+  --button-B-font: "Pretendard";
+  --button-B-size: 18px;
+  --button-B-weight: 700;
+  --button-B-lineheight: 27px;
+
+  --button-R-font: "Pretendard";
+  --button-R-size: 18px;
+  --button-R-weight: 400;
+  --button-R-lineheight: 27px;
+
+  --footer-01-font: "Pretendard";
+  --footer-01-size: 12px;
+  --footer-01-weight: 700;
+  --footer-01-lineheight: 14px;
+
+  --footer-02-font: "Pretendard";
+  --footer-02-size: 12px;
+  --footer-02-weight: 400;
+  --footer-02-lineheight: 14px;
 }

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Dexotick_By_Dhan_Studio";
+  src: url("DexotickByDhanStudio.eot");
+  src: url("DexotickByDhanStudio.eot?#iefix") format("embedded-opentype"),
+    url("DexotickByDhanStudio.woff2") format("woff2"),
+    url("DexotickByDhanStudio.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

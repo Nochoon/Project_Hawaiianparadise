@@ -3,3 +3,475 @@
 @import url("reset.css");
 @import url("common.css");
 @import url("font.css");
+
+body {
+  background-color: var(--color-background);
+}
+
+.main .inner {
+  max-width: 393px;
+  width: calc(100% - 25px);
+  padding: 30px 0;
+}
+
+.main .inner .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.main .inner .title h2 {
+  font-size: var(--heading-01-size);
+  font-family: var(--heading-01-font);
+  line-height: var(--hieading-01-lingheight);
+  text-align: center;
+}
+
+.main .inner .title p {
+  font-family: var(--caption-01-font);
+  font-size: var(--caption-01-size);
+  font-weight: var(--caption-01-weight);
+  line-height: var(--caption-01-lineheight);
+  color: var(--color-gray-01);
+  text-align: center;
+}
+
+/* main_visual */
+/* .main_visual {
+  height: calc(100vh - 70px);
+  position: relative;
+}
+
+.main_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.main_visual {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 비율 유지를 위한 값 */
+  height: calc(100vh - 70px);
+  overflow: hidden;
+}
+
+.main_visual iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* section-01 */
+
+.main .section-01 {
+  padding: 20px 0;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+
+.main .section-01 .inner .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.main .section-01 .inner .title h2 {
+  font-size: var(--heading-01-size);
+  font-family: var(--heading-01-font);
+  line-height: var(--hieading-01-lingheight);
+  text-align: center;
+}
+
+.main .section-01 .inner .title p {
+  font-family: var(--caption-01-font);
+  font-size: var(--caption-01-size);
+  font-weight: var(--caption-01-weight);
+  line-height: var(--caption-01-lineheight);
+  color: var(--color-gray-01);
+  text-align: center;
+}
+
+.main .section-01 .inner .list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.main .section-01 .inner .list .item {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main .section-01 .inner .list .item .product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main .section-01 .inner .list .item .product .imagebox a {
+  width: 100%;
+  display: block;
+}
+.main .section-01 .inner .list .item .product .imagebox a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .section-01 .inner .list .item .product .text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.main .section-01 .inner .list .item .product .text a {
+  display: block;
+}
+
+.main .section-01 .inner .list .item .product .text a p {
+  font-family: var(--body-02-font);
+  font-size: var(--body-02-size);
+  font-weight: var(--body-02-weight);
+  line-height: var(--body-02-lineheight);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.main .section-01 .inner .list .item .product .text a strong {
+  font-family: var(--body-01-font);
+  font-size: var(--body-01-size);
+  font-weight: var(--body-01-weight);
+  line-height: var(--body-01-lineheight);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.main .section-01 .inner .list .item .util {
+  display: flex;
+  justify-content: center;
+  column-gap: 13px;
+}
+
+.main .section-01 .inner .list .item .util a {
+  display: block;
+  width: 20px;
+}
+
+.main .section-01 .inner .list .item .util a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .section-01 .inner .morePageBtn {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.main .section-01 .inner .morePageBtn a {
+  width: 100%;
+  display: block;
+}
+
+.main .section-01 .inner .morePageBtn a button {
+  width: 100%;
+  height: 48px;
+  border: solid 1px var(--color-gray-03);
+  border-radius: 10px;
+}
+
+/* section-02 */
+
+.main .section-02 {
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.main .section-02 .background {
+  width: 100%;
+}
+.main .section-02 .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .section-02 .text {
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+.main .section-02 .text p {
+  color: var(--color-white);
+  font-family: var(--body-01-font);
+  font-size: var(--body-01-size);
+  font-weight: var(--body-01-weight);
+  line-height: var(--body-01-lineheight);
+  text-align: center;
+}
+
+/* section-03 */
+.main .section-03 {
+  padding: 20px 0;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+
+.main .section-03 .inner .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.main .section-03 .inner .title h2 {
+  font-size: var(--heading-01-size);
+  font-family: var(--heading-01-font);
+  line-height: var(--hieading-01-lingheight);
+  text-align: center;
+}
+
+.main .section-03 .inner .title p {
+  font-family: var(--caption-01-font);
+  font-size: var(--caption-01-size);
+  font-weight: var(--caption-01-weight);
+  line-height: var(--caption-01-lineheight);
+  color: var(--color-gray-01);
+  text-align: center;
+}
+
+.main .section-03 .inner .list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.main .section-03 .inner .list .item {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main .section-03 .inner .list .item .product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main .section-03 .inner .list .item .product .imagebox a {
+  width: 100%;
+  display: block;
+}
+.main .section-03 .inner .list .item .product .imagebox a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .section-03 .inner .list .item .product .text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.main .section-03 .inner .list .item .product .text a {
+  display: block;
+}
+
+.main .section-03 .inner .list .item .product .text a p {
+  font-family: var(--body-02-font);
+  font-size: var(--body-02-size);
+  font-weight: var(--body-02-weight);
+  line-height: var(--body-02-lineheight);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.main .section-03 .inner .list .item .product .text a strong {
+  font-family: var(--body-01-font);
+  font-size: var(--body-01-size);
+  font-weight: var(--body-01-weight);
+  line-height: var(--body-01-lineheight);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.main .section-03 .inner .list .item .util {
+  display: flex;
+  justify-content: center;
+  column-gap: 13px;
+}
+
+.main .section-03 .inner .list .item .util a {
+  display: block;
+  width: 20px;
+}
+
+.main .section-03 .inner .list .item .util a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .section-04 {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+.main .section-04 .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.main .section-04 .inner .title {
+}
+.main .section-04 .inner .product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main .section-04 .inner .product a {
+  width: 174px;
+  display: block;
+}
+.main .section-04 .inner .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .section-04 .inner .product h2 {
+  font-family: var(--heading-02-font);
+  font-size: var(--heading-02-size);
+  font-weight: var(--heading-02-weight);
+  line-height: var(--heading-02-lineheight);
+  color: var(--color-primary);
+}
+.main .section-04 .inner .product .text {
+  width: 73.02%;
+}
+.main .section-04 .inner .product .text p {
+  font-family: var(--body-02-font);
+  font-size: var(--body-02-size);
+  font-weight: var(--body-02-weight);
+  line-height: var(--body-02-lineheight);
+  text-align: left;
+}
+.main .section-04 .inner .purchase {
+  width: 61.32%;
+  height: 40px;
+}
+.main .section-04 .inner .purchase a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.main .section-04 .inner .purchase a button {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 30px;
+  color: var(--color-white);
+  font-family: var(--button-R-font);
+  font-size: var(--button-R-size);
+  font-weight: var(--button-R-weight);
+  line-height: var(--button-R-lineheight);
+  text-align: center;
+}
+.main .section-04 .inner .slide {
+  display: flex;
+  gap: 12px;
+}
+.main .section-04 .inner .slide .index {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-gray-01);
+  border-radius: 30px;
+}
+.main .section-04 .inner .slide .index.active {
+  background-color: var(--color-primary);
+}
+
+/* section-05 */
+
+.main .section-05 {
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.main .section-05 .background {
+  width: 100%;
+  height: 386px;
+}
+.main .section-05 .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.main .section-05 .list {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding: 0 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.main .section-05 .list img {
+  width: 36.64%;
+  height: 129px;
+  object-fit: cover;
+}
+
+.main .section-05 .list .text {
+}
+.main .section-05 .list .text p {
+  color: var(--color-white);
+  font-family: var(--body-01-font);
+  font-size: var(--body-01-size);
+  font-weight: var(--body-01-weight);
+  line-height: var(--body-01-lineheight);
+  text-align: center;
+}
+
+/*  */
+.main .section-05 .text {
+}
+.main .section-05 .text p {
+}

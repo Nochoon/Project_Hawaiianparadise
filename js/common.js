@@ -1,8 +1,8 @@
 let gnb;
+let wrap;
 window.onload = () => {
-  let menuBtn = document.querySelector(".btn");
   let buttonElements = document.getElementsByTagName("button");
-  let id;
+  wrap = document.querySelector("#wrap");
 
   gnb = document.querySelector(".gnb");
 
@@ -22,6 +22,7 @@ function ClickButtonEvent(id) {
 
     case "menu":
       gnb.classList.add("active");
+      wrap.classList.add("clickmenu");
       break;
 
     case "closegnb":

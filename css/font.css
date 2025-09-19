@@ -53,12 +53,12 @@
   --button-R-lineheight: 27px;
 
   --footer-01-font: "Pretendard";
-  --footer-01-size: 12px;
+  --footer-01-size: 16px;
   --footer-01-weight: 700;
-  --footer-01-lineheight: 14px;
+  --footer-01-lineheight: 24px;
 
   --footer-02-font: "Pretendard";
-  --footer-02-size: 12px;
+  --footer-02-size: 16px;
   --footer-02-weight: 400;
-  --footer-02-lineheight: 14px;
+  --footer-02-lineheight: 24px;
 }

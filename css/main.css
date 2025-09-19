@@ -3,18 +3,10 @@
 @import url("reset.css");
 @import url("common.css");
 @import url("font.css");
+@import url("define.css");
 
 body {
   background-color: var(--color-background);
-}
-
-#wrap {
-  max-width: 480px;
-}
-
-.inner {
-  width: calc(100% - 25px);
-  padding: 30px 0;
 }
 
 .inner .title {
@@ -370,14 +362,15 @@ body {
   color: var(--color-primary);
 }
 .section-04 .inner .product .text {
-  width: 73.02%;
+  text-align: center;
 }
 .section-04 .inner .product .text p {
   font-family: var(--body-02-font);
   font-size: var(--body-02-size);
   font-weight: var(--body-02-weight);
   line-height: var(--body-02-lineheight);
-  text-align: left;
+  text-align: center;
+  white-space: nowrap;
 }
 .section-04 .inner .purchase {
   width: 61.32%;
@@ -433,6 +426,8 @@ body {
 }
 
 .section-05 .list {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 0;
@@ -445,23 +440,54 @@ body {
   gap: 40px;
 }
 .section-05 .list img {
-  width: 36.64%;
-  height: 129px;
   object-fit: cover;
 }
 
 .section-05 .list .text {
-  padding: 0 30px;
 }
 .section-05 .list .text p {
   color: var(--color-white);
-  font-family: var(--body-01-font);
-  font-size: var(--body-01-size);
-  font-weight: var(--body-01-weight);
-  line-height: var(--body-01-lineheight);
+  font-family: var(--caption-01-font);
+  font-size: var(--caption-01-size);
+  font-weight: var(--caption-01-weight);
+  line-height: var(--caption-01-lineheight);
   text-align: center;
+  white-space: nowrap;
 }
 .section-05 .text {
 }
 .section-05 .text p {
+}
+@media screen and (min-width: 660px) and (max-width: 1024px) {
+  .section-02 .text p {
+    font-size: var(--heading-03-size);
+    line-height: var(--heading-03-lineheight);
+  }
+
+  .section-04 .inner .product h2 {
+    font-size: var(--heading-01-size);
+    line-height: var(--heading-01-lineheight);
+  }
+
+  .section-04 .inner .product .text p {
+    font-size: var(--heading-04-size);
+    line-height: var(--heading-04-lineheight);
+  }
+
+  .section-05 .list .text p {
+    font-size: var(--heading-04-size);
+    line-height: var(--heading-04-lineheight);
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 659px) {
+  .section-02 .text p {
+    font-size: var(--heading-04-size);
+    line-height: var(--heading-04-lineheight);
+  }
+}
+
+@media screen and (min-width: 434px) {
+  .section-05 .list .text p {
+  }
 }
